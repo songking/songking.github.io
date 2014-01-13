@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet_home.css"/>
+		<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+		<title>Song King</title>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+		$(function() {
+			$(window).scroll(function() {
+				if($(this).scrollTop() > 200) {
+					$('#backtotop').fadeIn();	
+				} else {
+					$('#backtotop').fadeOut();
+				}
+			});
+		 
+			$('#backtotop').click(function() {
+				$('body,html').animate({scrollTop:0},800);
+			});	
+		});
+		</script>
+
+	</head>
+	<body>
+
+		<!--Header Section-->
+		<header id="header_wrap">
+			<div id="container">
+				<div>
+					<h1 id="name">Song King</h1>
+					i<img id="selfie" src="img/selfie.png">
+				</div>
+				<div id="nav_div">
+					<ul>
+						<li class="nav"><a href="#about" title="About Me">About</a></li>
+						<li class="nav"><a href="#projects" title="My Projects">Projects</a></li>
+						<li class="nav"><a href="#interests" title="My Interests">Interests</a></li>
+						<li class="nav"><a href="#contact" title="Contact Me">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--End of Header Section -->
+
+		<!--About me Section-->
+		<div id="about_div">
+		<h1><hr id="about">About Me</hr></h1>
+			<p>
+				Hi! I'm Song King, a child actress turned professional figure skater turned soul-searcher. My current life calling is that of a Computer Science student at UC Berkeley, with an interest in mobile development, game programming, and user interface design. I aspire to be a world traveler, to both the majestic cities across the globe as well as the well-developed fictional lands found in novels, games, and movies. My notebook is full of short stories of a once-aspiring writer and random ponderings about time, space, and the infinite universe. I frequent music festivals, where art, music, and culture come together to be experienced by the open-minded. I've also recently picked up archery and weight-lifting in order to better prepare myself for a zombie apocalypse. Everyday is a new day, which means an opportunity to try something new.
+			</p>
+		</div>
+		<!--End of About Me Section-->
+
+		<!--Projects Section-->
+		<div>
+			<h1><hr id="projects">My Projects</hr></h1>
+			<h2>Cross Platform Demo App<br>
+			<span id="secondline">Electronic Arts</span>
+			</h2>
+			<p>
+				During my internship at EA during the summer of 2013, I (along with a co-intern, <a id="jerry" href="www.linkedin.com/pub/jerry-chen/64/b38/2a8">Jerry Chen</a>) produced a cross-platform game in C++ using Cocos-2DX that replicated Atari Breakout. Through the integration of EA's new internal SDK, the app had further capabilities such as micro-transactions, push notifications, Facebook, and tracking. The app was released as part of the SDK package to game teams to assist in the integration of the SDK.
+			</p>
+
+			<h2>Berkeley Street Cleaning iOS App<br>
+			<span id="secondline">In Progress</span>
+			</h2>
+			<p>
+				This iOS app will remind you that there is street cleaning on bookmarked streets as well as streets within a certain radius from your phone's geolocation.
+			</p>
+
+		</div>
+
+		<!--End of Projects Section-->
+
+
+		<!--Interests Section-->
+		<div id="int_div">
+			<h1><hr id="interests">My Interests</hr></h1>
+			<h2>Figure Skating</h2>
+			<table>
+				<tr>
+					<td class="int_table"><p>Figure Skating has always been the dearest thing in my heart. I began my skating career at the age of 4, forgoing a "normal" childhood to pursue my dreams of an Olympic Gold Medal. A few of my achievements include placing 5th at the 2008 US Figure Skating National Championships in St. Paul, Minnesota, being placed on the 2014 Olympics Development Team; winning two gold medals at ISI Worlds (2010); placing 9th at the 2009 Pacific Coast Sectionals in Jackson Hole, Wyoming; winning the silver at the US National Showcase Parade of Champions (2007); and winning the Tai Babilonia Perpetual Award (), Jennifer Ritter Perpetual Award, and the Joanne Funakoshi Perpetual Award () at the LAFSC Showcase for Skaters.</p>
+					</td>
+					<td><iframe width="420" height="315" src="//www.youtube.com/embed/PIgcq5U8eBc?rel=0" frameborder="0" allowfullscreen></iframe></td>
+				</tr>
+				<tr>
+					<td class="int_table"> <p>However, after sustaining just too many injuries (5 broken legs, a shattered foot, chronic tendonitis, chronic bursitis, juvenile arthritis), I realized my body just could not handle the sport any longer. So with a heavy heart, I hung up my skates for good at age 17. I'd be lying if I said that there isn't a day that I don't miss being on the ice; but I also don't regret taking steps in ensuring a long, healthy future for myself. I am glad to have come as close to my Olympic dream as I did. And I will be forever in debt to those who invested in me and often times believed in me more than I did myself (my parents, my brother Wind, and the two best coaches in the entire world, Tiffany Chin and Alex Chang).</p> </td>
+					<td><iframe width="420" height="315" src="//www.youtube.com/embed/c2e9Mo13t6Q?rel=0" frameborder="0" allowfullscreen></iframe></td>
+				</tr>
+			</table>
+			<table>
+				<h2>Acting <h2>
+				<tr>
+					<td><iframe width="420" height="315" src="//www.youtube.com/embed/KuLJFO8CG6Y?rel=0" frameborder="0" allowfullscreen></iframe></td>
+					<td class="int_table"><p>My parents put me into acting at age 4 because I was such a dramtic child and because I was just too gosh-darn-cute. It was never something that I took too seriously; I just thought it was fun. And I absolutely <em>loved</em> that I was good at it. I starred in a number of commercials including Kraft Cheese American Singles, Barbie, Toys for Tots, Disneyland, Scott Paper Towels, and Long John Silvers. I even appeared in an episode of The Amanda Show. I had to quit because balancing school, acting auditions, and skating practices proved to be a little too much for me and my family. To this day, I still enjoy casually acting; I am a declared Theater and Performance Studies major at UC Berkeley.</p></td>
+				</tr>
+			</table>
+			<table>
+				<h2>Video Games</h2>
+				<tr>
+					<td class="int_table"><p>Last Game Played: Even though Hearthstone: The Heroes of Warcraft is only in Beta right now, it's already quickly getting fans. Blizzard has made yet another successfully addictive game. Hearthstone definitely makes me a bit nostalgic of the times when I'd stay up all night strategically spamming 'Greater Heal' and 'Circle of Healing' on 40-man raids in WoW. But my favorite thing about Hearthstone is that it isn't terribly time-consuming. That is, a game usually takes about 10 minutes. So I can easily play a game or two in the middle of the day without hesitation. Good job, Blizzard. I'm excited to see how the game progresses as it moves along in its production stage and is finally publically released.
+					<br><br>
+					I am currently playing through The Last of Us on Playstation 3.</p></td>
+					<td><img id="hearthstone" src="img/hearthstone.png" title="Hearthstone: Heroes of Warcraft"></td>
+				</tr>
+			</table>
+			<table>
+				<h2>Reading</h2>
+				<tr>
+					<td><img id="faultinourstars" src="img/faultinourstars.png" title="The Fault in our Stars by John Greene"></td>
+					<td class="int_table"><p>Last Book Read: <em>The Fault in Our Stars</em> by John Green was a refreshingly short and easy read coming off of finishing the <em>A Song of Ice and Fire</em> series. With all the hype over the upcoming release of the movie based on the book, I immediately downloaded it onto my Kindle. I was definitely hesitant at first; I didn't want to read "another cancer book," because how my mom puts it, "The main character always dies." I was relieved to know that this book wasn't really about a girl's struggle with cancer; it wasn't written to make you sad for the sake of being sad or want to cry for the sake of crying (although, I must admit, I teared up a little bit). It serves to remind readers that cancer patients are not defined by their cancer; they are just as human as the rest of us. The book is about young love and chasing after what you want; and it reminds us that a short life can also be a full one.
+					<br><br>
+					I am currently reading <em>The Kite Runner</em> by Khaled Hosseini.</p></td>
+				</tr>
+			</table>
+		</div>
+
+		<!--End of Interests Section-->
+
+		<!--Contact Section-->
+		<div>
+			<h1><hr id="contact">Contact Me</hr></h1>
+			<ul class="contact_icons">
+				<li><a href="mailto:songking.64@gmail.com"><img id="email" src="img/email.png" alt="Click to email me!" title="Email me!"></a></li>
+				<li><a href="https://www.facebook.com/songsongking"><img id="facebook" src="img/facebook.png" alt="Click to Facebook me!" title="Facebook me!"></a></li>
+				<li><a href="http://www.instagram.com/songking"><img id="instagram" src="img/instagram.png" alt="Click to Instagram me!" title="Instagram me!"></a></li>
+				<li><a href="http://lnkd.in/bAjsFzc"><img id="linkedin" src="img/linkedin.png" alt="Click to visit my LinkedIn Profile!" title="Visit my LinkedIn profile!"></a></li>
+				<li><a href="https://www.youtube.com/channel/UCrcQKNxtnw3lT5W1vuGRTkQ/videos"><img id="youtube" src="img/youtube.png" alt="Click to visit my YouTube Channel" title="Youtube Me!"></a></li>
+				</ul>
+		</div>
+		<!-- End of Contact Section -->
+				<div id="backtotop" style="display: block;">Top</div>
+	</body>
+</html>

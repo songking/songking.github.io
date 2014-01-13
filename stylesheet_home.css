@@ -1,0 +1,163 @@
+/*
+-- General --
+*/
+
+body, html {
+    text-align: center;
+    font-family: 'News Cycle', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #ffceed;
+    color: black;
+    width: 960px;
+    margin: auto;
+}
+
+/* Header */
+#name{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: Tangerine, 'News Cycle', cursive;
+	font-size: 80px;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+
+/* Navigator */
+
+.nav{
+	list-style-type: none;
+	display:inline;
+	padding: 25px;
+}
+
+.nav a{
+	text-decoration: none;
+	margin-right:20px;
+	color:black;
+}
+
+.nav a:visited{
+	text-decoration: none;
+}
+
+
+/* Effect 1: Brackets
+	Source: https://github.com/codrops/CreativeLinkEffects;
+*/
+
+.nav a::before,
+.nav a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.nav a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.nav a:hover::before,
+.nav a:hover::after,
+.nav a:focus::before,
+.nav a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+
+/* About Me */
+#about_div > p {
+	text-align: justify
+}
+
+
+/* Projects */
+
+#secondline {
+    font-style: italic;
+    font-weight: 300;
+    color: #9da2a7;
+    font-size: 18px;
+}
+
+.hoverZoomLink:hover {
+	cursor: url(/images/magnify.cur);
+	opacity: .5;
+}
+
+#jerry{
+	text-decoration: none;
+	color:black;
+}
+#jerry:visited{
+	text-decoration: none;
+	color:black;
+}
+#jerry:hover{
+	text-decoration: underline;
+}
+
+
+/* Interests */
+.int_table{
+	text-align:justify;
+	padding: 15px;
+}
+
+
+/* Contact Me */
+
+.contact_icons{
+	margin-right:10px;
+}
+
+.contact_icons li{
+	list-style-type: none;
+	display:inline;
+	margin-right:20px;
+	padding-right:20px;
+}
+
+/* Back to Top Button
+Source: http://bluebotdesign.com/blog/?p=137
+*/
+
+#backtotop {
+	cursor : pointer;
+	display : none;
+	position : fixed;
+	bottom : 10px;
+	right: 10px;
+	font-size : 90%;
+	padding	: 10px;
+	text-align : center;
+	background-color : #000000;
+	border-radius : 50%;
+	opacity	: 0.6;
+	color : #FFF;
+	font-size : 14px;
+	z-index	: 1000;
+}
+
+#backtotop:hover
+{
+	opacity	: 0.9;
+}
