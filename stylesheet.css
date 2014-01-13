@@ -23,6 +23,12 @@ body, html {
 	text-shadow: 4px 4px 4px #aaa;
 }
 
+#selfie{
+	height:150px;
+	width:150px;
+	border:#9da2a7;
+	border-radius:50px;
+}
 
 /* Navigator */
 
