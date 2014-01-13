@@ -27,7 +27,7 @@ body, html {
 	height:150px;
 	width:150px;
 	border:#9da2a7;
-	border-radius:50px;
+	border-radius:50%;
 }
 
 /* Navigator */
