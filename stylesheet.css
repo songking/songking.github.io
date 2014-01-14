@@ -44,12 +44,11 @@ body, html {
 	color:black;
 }
 
-.nav a:visited{
-	text-decoration: none;
-}
 
-
-/* Effect 1: Brackets
+/* 
+	Created by Codrops
+	http://www.codrops.com
+	Effect 1: Brackets
 	Source: https://github.com/codrops/CreativeLinkEffects;
 */
 
@@ -126,6 +125,60 @@ body, html {
 .int_table{
 	text-align:justify;
 	padding: 15px;
+}
+
+.int_nav{
+	list-style-type: none;
+	display:inline;
+	padding: 25px;
+}
+
+.int_nav a{
+	text-decoration: none;
+	margin-right:20px;
+	color:black;
+}
+
+/* 
+	Created by Codrops
+	http://www.codrops.com
+	Effect 1: Brackets
+	Source: https://github.com/codrops/CreativeLinkEffects;
+*/
+
+.int_nav a::before,
+.int_nav a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.int_nav a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.int_nav a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.int_nav a:hover::before,
+.int_nav a:hover::after,
+.int_nav a:focus::before,
+.int_nav a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
 
 /* Contact Me */
