@@ -108,15 +108,15 @@ body, html {
 	opacity: .5;
 }
 
-#jerry{
+.link{
 	text-decoration: none;
 	color:black;
 }
-#jerry:visited{
+.link:visited{
 	text-decoration: none;
 	color:black;
 }
-#jerry:hover{
+.link:hover{
 	text-decoration: underline;
 }
 
